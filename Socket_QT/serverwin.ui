@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>server_win</class>
+ <widget class="QWidget" name="server_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#FFFFFF</string>
+  </property>
+  <widget class="QLineEdit" name="ip_edit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>221</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;   
+margin:10px; 	
+margin-left:50px;    
+margin-right:50px;		
+border-bottom: 2px solid #B3B3B3; 	
+border-bottom-color :#39C45D;
+font-family:黑体; 
+font-size:20px; 	
+font-weight:bold;	</string>
+   </property>
+   <property name="placeholderText">
+    <string>IP</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="port_edit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>221</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;   
+margin:10px; 	
+margin-left:50px;    
+margin-right:50px;		
+border-bottom: 2px solid #B3B3B3; 	
+border-bottom-color :#39C45D;
+font-family:黑体; 
+font-size:20px; 	
+font-weight:bold;	</string>
+   </property>
+   <property name="placeholderText">
+    <string>PORT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="run_btn">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>190</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#39C45D;
+border-radius:10px</string>
+   </property>
+   <property name="text">
+    <string>启动</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>180</y>
+     <width>201</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">boder-color:#39C45D</string>
+   </property>
+   <property name="title">
+    <string>连接信息</string>
+   </property>
+   <widget class="QTextEdit" name="status">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>181</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color:#39C45D</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>run_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>server_win</receiver>
+   <slot>startServer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>startServer()</slot>
+ </slots>
+</ui>
